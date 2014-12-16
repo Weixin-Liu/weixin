@@ -1,0 +1,111 @@
+/* ******************************
+	Bootstrap 3.3.0
+****************************** */
+@import "bootstrap";
+
+
+
+/* ******************************
+	Third-Party Plugins
+****************************** */
+@import "vendor/offcanvas";
+
+
+/* Main Css*/
+.content-block {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	padding: 15px 0;
+}
+#logo {
+	float: left;
+}
+
+.main-nav {
+	float: right;
+	padding-top: 20px;
+}
+
+/* Services */
+.services {
+	margin: 25px 0;
+	.service {
+		width: 330px;
+		float: left;
+		img {
+			float: left;
+			width: 33%;
+		}
+		.content {
+			float: left;
+			width: 66%;
+			padding: 0 15px;
+			h3 {
+				margin: 0 0 15px;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+/* Fixed Bg */
+.fixed-bg {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	.content-block {
+		text-align: center;
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		margin-left: -300px;
+		width: 600px;
+		&.contact {
+			left: auto;
+			top: auto;
+			margin: 0 auto;
+			position: relative;
+			width: 1024px;
+			text-align: left;
+			h3 {
+				margin-top: 10px;
+			}
+			.horizon-from {
+				.form-group {
+					width: 47%;
+					display: inline-block;
+					*display: inline;
+					zoom: 1;
+					float: left;
+					&:last-child {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+	
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}
+/* iPhone Retina Images */
+@media screen and (-webkit-min-device-pixel-ratio : 1.5),
+screen and (min-device-pixel-ratio : 1.5) {
+}

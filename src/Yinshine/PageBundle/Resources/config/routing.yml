@@ -1,0 +1,7 @@
+yinshine_homepage:
+    path:     /
+    defaults: { _controller: YinshinePageBundle:Page:index }
+
+yinshine_page:
+    path:     /page/{id}
+    defaults: { _controller: YinshinePageBundle:Page:show }

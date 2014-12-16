@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Yinshine Home Page{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+{% endblock %}
+{% block body %}
+	<div id="main-wrapper">
+		<header>
+			<div class="row content-block">
+				<div id="logo"><a href="#"><img src="http://placehold.it/120x80"></a></div>
+				<div class="main-nav">
+					{{ knp_menu_render('YinshinePageBundle:Builder:mainMenu') }}
+				</div>
+			</div>
+		</header>
+		{% block content %}
+
+		{% endblock %}
+		<footer>
+			<section class="content-block">
+				<div class="container-fluid">&copy;2014 All Rights Reserved, designed by Yinshine</div>
+			</section>
+		</footer>
+	</div>
+{% endblock %}
+{% block javascripts %}
+	<script type="text/javascript" src="{{ asset('js/lib/jquery-1.9.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
+{% endblock %}
